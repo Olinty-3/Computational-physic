@@ -6,14 +6,11 @@
 
 *  Isabel Alfonso Marchante
 
-************************************************************************
-
-* CUIDADO:  es importante el orden en que se escriben las ecuaciones; para asegurarse  de que funcione el programa, hay que reordenar las ecuaciones originales
-* de manera que la matriz de coeficientes sea diagonalmente dominante 
+************************************************************************ 
 
        subroutine GaussSeidel(n, a , b , xo , k , tol , x)
        
-       dimension a(n,n) , b(n) , xo(n) , x(n) !MUY IMPORTANTE definir tanto aqui como en el programa las dimensiones de los objetos
+       dimension a(n,n) , b(n) , xo(n) , x(n) 
        
        
 * Iniciamos el método
