@@ -50,7 +50,7 @@
 ************************************************************************
 
       
-* Vuelvo a definir las cte. ya que son distintos "subprogramas" y no se comunican entre ellos 
+* Vuelvo a definir las cte.
 
       real lmb
 
