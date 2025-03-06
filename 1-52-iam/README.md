@@ -22,3 +22,7 @@ Una buena práctica es gráficar la función de la que se buscan los ceros para 
 [logo]:https://github.com/Olinty-3/Computational-physic/blob/main/1-52-iam/1-52-iam.png
 
 He graficado tanto el potencial como su derivada ya que, aunque busquemos el cero de la derivada vine bien saber la forma del potencial. Además podemos comprobar que el m ínimo de $U(x)$ equivale al cero de $dU(x)$.
+
+Trabajando con una tolerancia de $$ 10^{-4}$$. Y obtengo $$ r_{eq} = 2.816 $$ $$ \circ{A} $$ con cinco interacciones. 
+
+Si buscamos en la literatura podemos encontrar que la distancia de equilibrio para una molécula de NaCl es de 2.36 $$ \circ{A} $$,  la discrepancia con nuestro resultado se debe a la simplicidad del modelo m ́as que a los métodos computacionales empleados.
