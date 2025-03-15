@@ -1,0 +1,3 @@
+# 5.13 
+
+Calcula y representa la trayectoria de un planeta alrededor del Sol (o de la Luna alrededor de la Tierra); supondremos que el Sol (o la Tierra, en su caso) se halla en reposo en el origen del sistema de coordenadas. Supón que el cuerpo celeste que se mueve se encuentra inicialmente en su perihelio (o la Luna, en su perigeo). Para comprobar si el resultado que obtienes es correcto: (a - 3 pto.) representa la trayectoria durante varias órbitas completas, que deben superponerse, (b - 3 pto.) representa la energía total del planeta, que debe mantenerse constante, y (c - 4 pto.) calcula la velocidad areolar, que ha de ser constante, de acuerdo con la segunda ley de Kepler.
