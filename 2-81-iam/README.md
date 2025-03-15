@@ -21,7 +21,7 @@ $$ malla \ \ \ acefa: - I_2 R_{\otimes} - I_6 R_{\oplus} - I_9 R_{\otimes} = - R
 
 Donde he supuesto que la pila no ejerce ningunar resistencia.
 
-La matriz a resolver queda: 
+El sistema de ecuaciones a resolver queda: 
 
 ```math
 
@@ -40,4 +40,43 @@ La matriz a resolver queda:
 
 \end{pmatrix}
 
+\begin{pmatrix}
+
+I_1 \\ I_2 \\ I_3 \\ I_4 \\ I_5 \\ I_6 \\ I_7 \\ I_8 \\ I_9 \\ I_{10}
+
+\end{pmatrix}
+
+R_{\oplus} =
+
+\begin{pmatrix}
+
+0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ V
+
+\end{pmatrix} 
+
+
 ```
+
+The solution is: 
+
+| $i$ | $I_i$ $R_{\oplus}$ (V) | | $i$ | $I_i$ $R_{\oplus}$ (V) | 
+| :---: | :---: | --- | :---: | :---: |
+| 1 | 1.071 | | 6 | - 0.875 | 
+| 2 | - 1.0 | | 7 | 0.143 |
+| 3 | - 0.143 | | 8 | 1.0 |
+| 4 | 0.857 | | 9 | -1.071 |
+| 5 | 0.357 | | 10 | 2.071 | 
+
+But actually we are asked about the voltage in the nodes. To do so we know that the potential's difference between two nodes will be the potential in the resistence. So we just solve this four ecuation system: 
+
+$$ V_{\oplus} - V_1 = I_1 R_{\otimes} = 2 I_1 R_{oplus} $$ 
+$$ V_1 - V_2 = I_4 R_{\oplus} $$ 
+$$ V_3 - V_{\oplus} = I_2 R_{\otimes} = 2 I_2 R_{\oplus} $$ 
+$$ V_4 - V_3 = I_6 R_{\oplus} $$ 
+
+$$ V_1 = 2.857 V $$ 
+$$ V_2 = 3.0 V $$ 
+$$ V_3 = 3.0 V $$ 
+$$ V_4 = 2.143 V $$ 
+
+
