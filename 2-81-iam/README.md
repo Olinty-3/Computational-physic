@@ -5,7 +5,7 @@
 
 [logo]:https://github.com/Olinty-3/Computational-physic/blob/main/2-81-iam/2-81b-iam.png
 
-Para resolverlo usare las reglas de Krichoff para crear una matriz de 10x10 que resolvere con un programa en fortran. En la imágen superior derecha se puede ver como he nombrado a los distintos nodos y distintas intensidades asi como el sentido que he tomado para las intensidades, si estas salen negativas será por que las he tomado al reves.
+Para resolverlo usare las reglas de Krichoff para crear una matriz de 10x10 que resolví con el programa en fortran. En la imágen superior se puede ver como he nombrado a los distintos nodos y distintas intensidades asi como el sentido que he tomado para las intensidades, si estas salen negativas será por que las he tomado al reves.
 
 $$ nudo \ \ \ a: I_1 - I_2 - I_{10} = 0 $$
 $$ nudo \ \ \ b: -I_1 + I_3 + I_4 + I_5 = 0 $$
@@ -19,3 +19,25 @@ $$ malla \ \ \ bedb: - I_4 R_{\oplus} + I_5 R_{\otimes} + I_7 R_{\oplus} = R_{\o
 $$ malla \ \ \ dfed: I_7 R_{\oplus} + I_8 R_{\otimes} + I_9 R_{\otimes} = R_{\oplus} ( I_7 + 2 I_8 + 2 I_9 ) = 0 $$
 $$ malla \ \ \ acefa: - I_2 R_{\otimes} - I_6 R_{\oplus} - I_9 R_{\otimes} = - R_{\oplus} ( 2 I_2 + I_6 + 2 I_9 ) = V_+ $$
 
+Donde he supuesto que la pila no ejerce ningunar resistencia.
+
+La matriz a resolver queda: 
+
+```math
+
+\begin{pmatrix}
+
+1 & -1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 \\
+-1 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 & 0 & 0 & -1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & -1 & 1 & 1 & 0 & -1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & -1 & 1 & 1 \\
+2 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 0 & 2 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 & 2 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 2 & 2 & 0 \\
+0 & -2 & 0 & 0 & 0 & -1 & 0 & 0 & -2 & 0 
+
+\end{pmatrix}
+
+```
