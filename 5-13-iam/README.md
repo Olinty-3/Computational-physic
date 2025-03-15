@@ -44,7 +44,5 @@ $$ \vec{v}_a = \frac{1}{2m}|\vec{r}\ \times m \vec{v}| = \frac{1}{2} | x v_y - y
 
 [logo3]:https://github.com/Olinty-3/Computational-physic/blob/main/5-13-iam/5-13-3-iam.png
 
-![alt text][logo4]
 
-[logo4]:https://github.com/Olinty-3/Computational-physic/blob/main/5-13-iam/5-13-4-iam.png
 
