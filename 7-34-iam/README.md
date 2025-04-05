@@ -53,7 +53,25 @@ $$ d_{rms} = a \sqrt{N} + b $$
 
 In this case $a = 59.770 \pm 0.097$ and $b = 8.3 \pm 1.8$ 
 
-**c) Lastly, compute the same but this time the size of each step will follow a decreasong exponential with mean value $l = 60$**
+**c) Lastly, compute the same but this time the size of each step will follow a decreasong exponential with mean value $\langle l \rangle = 60$**
+
+To get this type of distribution I just produce a random number between 0 and 1, $r$ and use:
+
+$$ l = - \frac{ln(1-r)}{\langle l \rangle} $$
+
+The procedure is identical 
+
+![alt text][logo5]
+
+[logo5]:https://github.com/Olinty-3/Computational-physic/blob/main/7-34-iam/7-34-d3-iam.png
+
+![alt text][logo6]
+
+[logo6]:https://github.com/Olinty-3/Computational-physic/blob/main/7-34-iam/7-34-c2-iam.png
+
+This time I get $a = (2.3449 \pm 0.0098) * 10^{-2}$ and $b = (3.3 \pm 1.8) * 10^{-3}$
+
+
 
 
 
