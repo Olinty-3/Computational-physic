@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Sat Apr 22 13:48:46 2023
+
+
+FIT:    data read from '7-34-c-iam.dat'
+        format = z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * sqrt(x) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.9451544863e-04   0.00e+00  3.01e-01    2.300000e-02   1.000000e-02
+   5 4.2675071361e-05  -4.04e-05  3.01e-06    2.344906e-02   3.272379e-03
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.26751e-05
+rel. change during last iteration : -4.04085e-10
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00266693
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.11251e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0234491        +/- 9.75e-05     (0.4158%)
+b               = 0.00327238       +/- 0.001803     (55.09%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.852  1.000 
